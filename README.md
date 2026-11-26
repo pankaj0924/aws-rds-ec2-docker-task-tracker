@@ -157,9 +157,6 @@ The rows match the website, and adding or deleting a task changes the result.
 | `Conflict. The container name is already in use` | Ran the same `docker run` twice | `sudo docker rm -f tasks-app`, then run again |
 | `docker: permission denied ... docker.sock` | Missing `sudo` | Prefix Docker commands with `sudo` |
 | `nc: command not found` | netcat not installed | `sudo dnf install -y nmap-ncat` |
-| `ERROR 1045 ... (using password: NO)` | Password never reached the MySQL client | Click inside the terminal first, or pass `-p'<password>'` |
-| `read -s -p "..."` quoting errors | Password typed inside the quotes of the prompt | Use `read -s -p "DB password: " DBPASS; echo`, or pass the password with `-e DB_PASSWORD='...'` |
-| `USE taskdb;` → `command not found` | SQL typed at the shell prompt | SQL goes at the `mysql>` prompt |
 | Restored DB was `db.m7g.large` | The restore form did not default to the Free tier class | **Choose the instance class explicitly** (`db.t4g.micro`) when restoring |
 | Restored DB unreachable (risk) | Restores can default to the VPC's `default` security group | Set `app-rds-sg` in the restore form |
 
