@@ -87,9 +87,9 @@ sudo docker build -t tasks-app .
 
 ```bash
 sudo docker run -d --name tasks-app --restart unless-stopped -p 80:3000 \
-  -e DB_HOST="<your-rds-endpoint>" \
+  -e DB_HOST= database-2.chsoie6qifui.eu-north-1.rds.amazonaws.com \
   -e DB_USER="admin" \
-  -e DB_PASSWORD='<your-db-password>' \
+  -e DB_PASSWORD= Pankaj24 \
   -e DB_NAME="taskdb" \
   tasks-app
 
@@ -134,9 +134,9 @@ The rows match the website, and adding or deleting a task changes the result.
    ```bash
    sudo docker rm -f tasks-app
    sudo docker run -d --name tasks-app --restart unless-stopped -p 80:3000 \
-     -e DB_HOST="<new-rds-endpoint>" \
+     -e DB_HOST= database-restored.chsoie6qifui.eu-north-1.rds.amazonaws.com \
      -e DB_USER="admin" \
-     -e DB_PASSWORD='<your-db-password>' \
+     -e DB_PASSWORD= Pankaj24 \
      -e DB_NAME="taskdb" \
      tasks-app
    ```
