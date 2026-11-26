@@ -145,7 +145,7 @@ The rows match the website, and adding or deleting a task changes the result.
 
 **Result:** deleted data fully recovered from the snapshot.
 
-![Task Tracker after the restore](Screenshots/08-task-tracker-after-restore.png)
+![Task Tracker after the restore](screenshots/08-task-tracker-after-restore.png)
 
 ## Lessons learned / troubleshooting
 
