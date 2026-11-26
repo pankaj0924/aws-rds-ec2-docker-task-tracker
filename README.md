@@ -189,17 +189,6 @@ Delete in this order:
 - **Secrets Manager** + IAM role instead of environment-variable passwords
 - Terraform to build everything with one command
 
-## Screenshots
-
-Add cropped screenshots to `screenshots/` (hide the account ID, endpoints and IPs):
-
-1. Task Tracker with tasks
-2. `SELECT * FROM tasks;` before the disaster
-3. Snapshot status: Available
-4. `Empty set` after the disaster
-5. Restored data in MySQL
-6. Task Tracker after the restore
-
 ## Author
 
 Built as a hands-on AWS RDS practice project.
